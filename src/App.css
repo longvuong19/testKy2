@@ -24,7 +24,8 @@ input {
 }
 
 .FiltersBtns button:hover,
-.FiltersBtns button:focus {
+.FiltersBtns button:focus,
+.FiltersBtns button.active {
   background-color: rgb(62, 165, 200);
   color           : #fff;
 }
