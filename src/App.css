@@ -17,17 +17,17 @@ input {
 }
 
 .FiltersBtns button {
-  cursor   : pointer;
-  font-size: 16px;
-  padding  : 4px 12px;
-  border   : none;
+  cursor          : pointer;
+  font-size       : 16px;
+  padding         : 4px 12px;
+  border          : none;
+  background-color: transparent;
 }
 
-.FiltersBtns button:hover,
-.FiltersBtns button:focus,
 .FiltersBtns button.active {
-  background-color: rgb(62, 165, 200);
-  color           : #fff;
+  border-bottom: 2px solid rgb(0, 51, 217);
+  color        : #0400ff;
+  font-weight  : bold;
 }
 
 .AddTask {
@@ -37,15 +37,17 @@ input {
 
 .addBtn,
 .delBtn {
-  cursor: pointer;
+  cursor       : pointer;
+  border-radius: 8px;
+  border       : none;
 }
 
 .delBtn {
-  padding: 4px;
+  padding: 12px;
 }
 
 .addBtn {
-  padding: 4px 8px;
+  padding: 8px 12px;
 }
 
 .Tasks {
