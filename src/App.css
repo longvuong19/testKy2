@@ -1,38 +1,67 @@
 .App {
   text-align: center;
+  width     : 400px;
+  margin    : auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  width       : 100%;
+  margin-right: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.FiltersBtns {
+  display        : flex;
+  justify-content: space-between;
+  margin-bottom  : 20px;
+  gap            : 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.FiltersBtns button {
+  cursor   : pointer;
+  font-size: 16px;
+  padding  : 4px 12px;
+  border   : none;
 }
 
-.App-link {
-  color: #61dafb;
+.FiltersBtns button:hover,
+.FiltersBtns button:focus {
+  background-color: rgb(62, 165, 200);
+  color           : #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.AddTask {
+  display        : flex;
+  justify-content: space-between;
+}
+
+.addBtn,
+.delBtn {
+  cursor: pointer;
+}
+
+.delBtn {
+  padding: 4px;
+}
+
+.addBtn {
+  padding: 4px 8px;
+}
+
+.Tasks {
+  display        : flex;
+  align-items    : center;
+  text-align     : center;
+  justify-content: space-between;
+}
+
+.delBtn:hover {
+  background-color: rgb(255, 64, 0);
+  color           : #fff;
+  border-color    : rgb(255, 64, 0);
+}
+
+.addBtn:hover {
+  background-color: rgb(54, 35, 199);
+  border-color    : rgb(54, 35, 199);
+  color           : #fff;
 }
